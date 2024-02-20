@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="select.js" defer></script>
+    <title>InterviwQuestion</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 400px;
+        margin: 100px auto;
+        padding: 10px 100px;
+      }
+      .select {
+        display: inline-block;
+        max-width: 350px;
+        margin: 0px auto;
+        width: 100%;
+      }
+      .select .item,
+      .select .text {
+        width: 180px;
+        height: 30px;
+        border: 1px solid #ccc;
+        margin: -1px 0px 0px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 3px #ccc;
+        background: #fff;
+        border-radius: 10px;
+      }
+      .select .item {
+        display: none;
+      }
+      .select:hover .item {
+        display: block;
+      }
+      .btn {
+        position: absolute;
+        right: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="f1" method="GET" action="http://localhost:8088/">
+      <select class="select" name="select">
+        <option name="fruit" value="Apple">Apple</option>
+        <option name="fruit" value="Banana">Banana</option>
+        <option name="fruit" value="Watermelon">Watermelon</option>
+        <option name="fruit" value="Pineapple">Pineapple</option>
+        <option name="fruit" value="Peach">Peach</option>
+      </select>
+      <select class="select" name="select">
+        <option name="vehicle" value="Car">Car</option>
+        <option name="vehicle" value="Train">Train</option>
+        <option name="vehicle" value="Airplane">Airplane</option>
+        <option name="vehicle" value="Bike">Bike</option>
+        <option name="vehicle" value="Motorcycle">Motorcycle</option>
+      </select>
+      <select class="select" name="select">
+        <option name="language" value="Chinese">Chinese</option>
+        <option name="language" value="English">English</option>
+        <option name="language" value="Japanese">Japanese</option>
+        <option name="language" value="Korean">Korean</option>
+      </select>
+      <select class="select" name="select">
+        <option name="a" value="d">d</option>
+        <option name="a" value="f">f</option>
+        <option name="a" value="g">g</option>
+        <option name="a" value="h">h</option>
+      </select>
+    </form>
+  </body>
+</html>
